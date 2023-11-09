@@ -11,9 +11,10 @@
 #define TRIE_H
 
 class TrieNode {
-public:
+private:
     TrieNode* children[26]; // 子节点 最多26个
     bool is_end;
+public:
 
     void insert(TrieNode* root, std::string& s);
 

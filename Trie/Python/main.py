@@ -14,7 +14,11 @@ for i in range(m):
 m = eval(input())
 for i in range(m):
     s = input()
-    if trie.find(trie, s):
-        print("yes")
+    t = trie.find(trie, s)
+    print(t)
+    if t == 1:
+        print("OK")
+    elif t == 2:
+        print("REPEAT")
     else:
-        print("no")
+        print("WRONG")
